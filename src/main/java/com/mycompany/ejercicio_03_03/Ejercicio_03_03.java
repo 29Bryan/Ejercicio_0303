@@ -5,6 +5,7 @@
 
 package com.mycompany.ejercicio_03_03;
 
+import vista.AsignaturaVentana;
 import vista.EstudianteVentana;
 
 /**
@@ -14,7 +15,10 @@ import vista.EstudianteVentana;
 public class Ejercicio_03_03 {
 
     public static void main(String[] args) {
-        var ventanaCapitan= new EstudianteVentana("Panel Principal");
-        ventanaCapitan.setVisible(true);
+        var ventanaEstudiante= new EstudianteVentana("Panel Principal");
+        ventanaEstudiante.setVisible(true);
+        
+        var ventanaAsignatura= new AsignaturaVentana("Panel Principal");
+        ventanaAsignatura.setVisible(true);
     }
 }
