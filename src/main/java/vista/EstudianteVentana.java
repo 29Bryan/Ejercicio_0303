@@ -32,7 +32,7 @@ public class EstudianteVentana extends JFrame implements ActionListener{
     
     public EstudianteVentana(String title) throws HeadlessException {
         this.setTitle(title);
-        this.setSize(300,500);
+        this.setSize(300,275);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.iniciarComponentes();
     }

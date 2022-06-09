@@ -14,7 +14,7 @@ import vista.EstudianteVentana;
 public class Ejercicio_03_03 {
 
     public static void main(String[] args) {
-        var ventanaCapitan= new EstudianteVentana("Panel 1");
+        var ventanaCapitan= new EstudianteVentana("Panel Principal");
         ventanaCapitan.setVisible(true);
     }
 }
