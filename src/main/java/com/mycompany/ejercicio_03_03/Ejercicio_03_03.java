@@ -6,6 +6,7 @@
 package com.mycompany.ejercicio_03_03;
 
 import vista.AsignaturaVentana;
+import vista.CalificacionVentana;
 import vista.EstudianteVentana;
 
 /**
@@ -20,5 +21,8 @@ public class Ejercicio_03_03 {
         
         var ventanaAsignatura= new AsignaturaVentana("Panel Principal");
         ventanaAsignatura.setVisible(true);
+        
+        var ventanaCalificacion= new CalificacionVentana("Panel Principal");
+        ventanaCalificacion.setVisible(true);
     }
 }
