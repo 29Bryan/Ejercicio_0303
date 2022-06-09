@@ -4,6 +4,7 @@
  */
 package vista;
 
+import controlador.EstudianteControl;
 import java.awt.Color;
 import java.awt.FlowLayout;
 import java.awt.HeadlessException;
@@ -27,6 +28,7 @@ public class EstudianteVentana extends JFrame implements ActionListener{
     private List<JTextField> jTextFieldList;
     private List<JButton> jButtonList;
     private List<JPanel> jPanelList;
+    private EstudianteControl estudianteControl = new EstudianteControl();
     
     public EstudianteVentana(String title) throws HeadlessException {
         this.setTitle(title);
@@ -91,11 +93,25 @@ public class EstudianteVentana extends JFrame implements ActionListener{
     
     @Override
     public void actionPerformed(ActionEvent e) {
-        
-        
-            String [] params = new String[2];
+        if(e.getSource().equals(this.jButtonList.get(0))){
+            String [] params = new String[5];
             params[0]=this.jTextFieldList.get(0).getText();
             params[1]=this.jTextFieldList.get(1).getText();
-            System.out.println("Hola"+params[0]+" "+params[1]);
+            params[2]=this.jTextFieldList.get(2).getText();
+            params[3]=this.jTextFieldList.get(3).getText();
+            params[4]=this.jTextFieldList.get(4).getText();
+            
+            this.estudianteControl.crear(params); 
+            
+            this.jTextFieldList.get(0).setText("");
+            this.jTextFieldList.get(1).setText("");
+            this.jTextFieldList.get(2).setText("");
+            this.jTextFieldList.get(3).setText("");
+            this.jTextFieldList.get(4).setText("");  
+        }
+        
+        if(e.getSource().equals(this.jButtonList.get(1))){
+            System.out.println(this.estudianteControl.listar().toString());
+        }
     }  
 }

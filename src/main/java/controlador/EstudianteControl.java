@@ -17,9 +17,9 @@ public class EstudianteControl {
     private final EstudianteServicio estudianteServicio = new EstudianteServicio(); 
     
     public Estudiante crear(String [] params){
-        
-        return null;
-        
+        var estudiante = new Estudiante(params[0],Integer.valueOf(params[1]),Integer.valueOf(params[1]), params[3], params[4]); 
+        this.estudianteServicio.crear(estudiante);
+        return estudiante;
     }
     
     public List<Estudiante> listar()

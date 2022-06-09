@@ -12,15 +12,15 @@ public class Estudiante {
     private String nombre; 
     private int edad; 
     private int numeroCedula; 
-    private String lugarNacimiento; 
     private String grado; 
+    private String lugarNacimiento; 
 
-    public Estudiante(String nombre, int edad, int numeroCedula, String lugarNacimiento, String grado) {
+    public Estudiante(String nombre, int edad, int numeroCedula, String grado, String lugarNacimiento) {
         this.nombre = nombre;
         this.edad = edad;
         this.numeroCedula = numeroCedula;
-        this.lugarNacimiento = lugarNacimiento;
         this.grado = grado;
+        this.lugarNacimiento = lugarNacimiento;
     }
 
     public String getNombre() {
@@ -47,14 +47,6 @@ public class Estudiante {
         this.numeroCedula = numeroCedula;
     }
 
-    public String getLugarNacimiento() {
-        return lugarNacimiento;
-    }
-
-    public void setLugarNacimiento(String lugarNacimiento) {
-        this.lugarNacimiento = lugarNacimiento;
-    }
-
     public String getGrado() {
         return grado;
     }
@@ -63,8 +55,16 @@ public class Estudiante {
         this.grado = grado;
     }
 
+    public String getLugarNacimiento() {
+        return lugarNacimiento;
+    }
+
+    public void setLugarNacimiento(String lugarNacimiento) {
+        this.lugarNacimiento = lugarNacimiento;
+    }
+
     @Override
     public String toString() {
-        return "Estudiante{" + "nombre=" + nombre + ", edad=" + edad + ", numeroCedula=" + numeroCedula + ", lugarNacimiento=" + lugarNacimiento + ", grado=" + grado + '}';
+        return "Estudiante{" + "nombre=" + nombre + ", edad=" + edad + ", numeroCedula=" + numeroCedula + ", grado=" + grado + ", lugarNacimiento=" + lugarNacimiento + '}';
     }
 }
