@@ -5,6 +5,8 @@
 
 package com.mycompany.ejercicio_03_03;
 
+import vista.EstudianteVentana;
+
 /**
  *
  * @author PCG
@@ -12,6 +14,7 @@ package com.mycompany.ejercicio_03_03;
 public class Ejercicio_03_03 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        var ventanaCapitan= new EstudianteVentana("Panel 1");
+        ventanaCapitan.setVisible(true);
     }
 }

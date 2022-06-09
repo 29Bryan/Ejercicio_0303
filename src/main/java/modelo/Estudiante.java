@@ -67,6 +67,4 @@ public class Estudiante {
     public String toString() {
         return "Estudiante{" + "nombre=" + nombre + ", edad=" + edad + ", numeroCedula=" + numeroCedula + ", lugarNacimiento=" + lugarNacimiento + ", grado=" + grado + '}';
     }
-    
-    
 }

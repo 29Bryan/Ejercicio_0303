@@ -4,10 +4,14 @@
  */
 package servicio;
 
+import java.util.List;
+import modelo.Estudiante;
+
 /**
  *
  * @author PCG
  */
 public interface IEstudianteServicio {
-    
+    public Estudiante crear(Estudiante estudiante);
+    public List<Estudiante>listar();
 }
